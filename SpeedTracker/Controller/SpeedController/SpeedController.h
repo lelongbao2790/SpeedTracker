@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SpeedController.h
 //  SpeedTracker
 //
 //  Created by Bao (Brian) L. LE on 3/14/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SpeedController : UIViewController
 
 @end
-

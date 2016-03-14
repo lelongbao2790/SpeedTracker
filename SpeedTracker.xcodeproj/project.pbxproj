@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		D32E1CB71C9651FC007C7F10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CB61C9651FC007C7F10 /* main.m */; };
 		D32E1CBA1C9651FC007C7F10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CB91C9651FC007C7F10 /* AppDelegate.m */; };
-		D32E1CBD1C9651FC007C7F10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CBC1C9651FC007C7F10 /* ViewController.m */; };
 		D32E1CC01C9651FC007C7F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E1CBE1C9651FC007C7F10 /* Main.storyboard */; };
 		D32E1CC21C9651FC007C7F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32E1CC11C9651FC007C7F10 /* Assets.xcassets */; };
 		D32E1CC51C9651FC007C7F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E1CC31C9651FC007C7F10 /* LaunchScreen.storyboard */; };
 		D32E1CD01C9651FC007C7F10 /* SpeedTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CCF1C9651FC007C7F10 /* SpeedTrackerTests.m */; };
 		D32E1CDB1C9651FD007C7F10 /* SpeedTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CDA1C9651FD007C7F10 /* SpeedTrackerUITests.m */; };
+		D32E1CE91C9654D3007C7F10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32E1CE81C9654D2007C7F10 /* CoreLocation.framework */; };
+		D32E1CF21C965630007C7F10 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CF11C965630007C7F10 /* LocationManager.m */; };
+		D32E1CF91C965EE3007C7F10 /* SpeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CF81C965EE3007C7F10 /* SpeedController.m */; };
+		D32E1D021C966CF9007C7F10 /* SOLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CFD1C966CF9007C7F10 /* SOLocationManager.m */; };
+		D32E1D031C966CF9007C7F10 /* SOMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1CFF1C966CF9007C7F10 /* SOMotionDetector.m */; };
+		D32E1D041C966CF9007C7F10 /* SOStepDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1D011C966CF9007C7F10 /* SOStepDetector.m */; };
+		D32E1D061C966D1F007C7F10 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32E1D051C966D1F007C7F10 /* CoreMotion.framework */; };
+		D32E1D0E1C9692CE007C7F10 /* bg_speed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D32E1D0D1C9692CE007C7F10 /* bg_speed.jpg */; };
+		D32E1D121C96B434007C7F10 /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E1D111C96B434007C7F10 /* MarqueeLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,6 @@
 		D32E1CB61C9651FC007C7F10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D32E1CB81C9651FC007C7F10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D32E1CB91C9651FC007C7F10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D32E1CBB1C9651FC007C7F10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D32E1CBC1C9651FC007C7F10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D32E1CBF1C9651FC007C7F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D32E1CC11C9651FC007C7F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32E1CC41C9651FC007C7F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,22 @@
 		D32E1CD61C9651FD007C7F10 /* SpeedTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32E1CDA1C9651FD007C7F10 /* SpeedTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedTrackerUITests.m; sourceTree = "<group>"; };
 		D32E1CDC1C9651FD007C7F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32E1CE81C9654D2007C7F10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D32E1CF01C965630007C7F10 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = LocationManager/LocationManager.h; sourceTree = "<group>"; };
+		D32E1CF11C965630007C7F10 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationManager.m; path = LocationManager/LocationManager.m; sourceTree = "<group>"; };
+		D32E1CF61C965892007C7F10 /* SpeedTrackerPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeedTrackerPrefix.pch; path = Config/SpeedTrackerPrefix.pch; sourceTree = "<group>"; };
+		D32E1CF71C965EE3007C7F10 /* SpeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeedController.h; path = Controller/SpeedController/SpeedController.h; sourceTree = "<group>"; };
+		D32E1CF81C965EE3007C7F10 /* SpeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeedController.m; path = Controller/SpeedController/SpeedController.m; sourceTree = "<group>"; };
+		D32E1CFC1C966CF9007C7F10 /* SOLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLocationManager.h; sourceTree = "<group>"; };
+		D32E1CFD1C966CF9007C7F10 /* SOLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLocationManager.m; sourceTree = "<group>"; };
+		D32E1CFE1C966CF9007C7F10 /* SOMotionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMotionDetector.h; sourceTree = "<group>"; };
+		D32E1CFF1C966CF9007C7F10 /* SOMotionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMotionDetector.m; sourceTree = "<group>"; };
+		D32E1D001C966CF9007C7F10 /* SOStepDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOStepDetector.h; sourceTree = "<group>"; };
+		D32E1D011C966CF9007C7F10 /* SOStepDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOStepDetector.m; sourceTree = "<group>"; };
+		D32E1D051C966D1F007C7F10 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D32E1D0D1C9692CE007C7F10 /* bg_speed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_speed.jpg; sourceTree = "<group>"; };
+		D32E1D101C96B434007C7F10 /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
+		D32E1D111C96B434007C7F10 /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32E1D061C966D1F007C7F10 /* CoreMotion.framework in Frameworks */,
+				D32E1CE91C9654D3007C7F10 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				D32E1CB41C9651FC007C7F10 /* SpeedTracker */,
+				D32E1CFA1C966CC5007C7F10 /* ThirthLibrary */,
+				D32E1CEA1C965509007C7F10 /* Framework */,
 				D32E1CCE1C9651FC007C7F10 /* SpeedTrackerTests */,
 				D32E1CD91C9651FD007C7F10 /* SpeedTrackerUITests */,
 				D32E1CB31C9651FC007C7F10 /* Products */,
@@ -101,13 +127,13 @@
 		D32E1CB41C9651FC007C7F10 /* SpeedTracker */ = {
 			isa = PBXGroup;
 			children = (
-				D32E1CB81C9651FC007C7F10 /* AppDelegate.h */,
-				D32E1CB91C9651FC007C7F10 /* AppDelegate.m */,
-				D32E1CBB1C9651FC007C7F10 /* ViewController.h */,
-				D32E1CBC1C9651FC007C7F10 /* ViewController.m */,
-				D32E1CBE1C9651FC007C7F10 /* Main.storyboard */,
+				D32E1D0A1C969201007C7F10 /* Resource */,
+				D32E1CF41C965861007C7F10 /* Config */,
+				D32E1CF31C96584A007C7F10 /* Modal */,
+				D32E1CEB1C96553D007C7F10 /* AppDelegate */,
+				D32E1CEC1C965544007C7F10 /* Controller */,
+				D32E1CED1C965565007C7F10 /* Storyboard */,
 				D32E1CC11C9651FC007C7F10 /* Assets.xcassets */,
-				D32E1CC31C9651FC007C7F10 /* LaunchScreen.storyboard */,
 				D32E1CC61C9651FC007C7F10 /* Info.plist */,
 				D32E1CB51C9651FC007C7F10 /* Supporting Files */,
 			);
@@ -138,6 +164,106 @@
 				D32E1CDC1C9651FD007C7F10 /* Info.plist */,
 			);
 			path = SpeedTrackerUITests;
+			sourceTree = "<group>";
+		};
+		D32E1CEA1C965509007C7F10 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1D051C966D1F007C7F10 /* CoreMotion.framework */,
+				D32E1CE81C9654D2007C7F10 /* CoreLocation.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		D32E1CEB1C96553D007C7F10 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CB81C9651FC007C7F10 /* AppDelegate.h */,
+				D32E1CB91C9651FC007C7F10 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D32E1CEC1C965544007C7F10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CF71C965EE3007C7F10 /* SpeedController.h */,
+				D32E1CF81C965EE3007C7F10 /* SpeedController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D32E1CED1C965565007C7F10 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CBE1C9651FC007C7F10 /* Main.storyboard */,
+				D32E1CC31C9651FC007C7F10 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		D32E1CEF1C9655D0007C7F10 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CF01C965630007C7F10 /* LocationManager.h */,
+				D32E1CF11C965630007C7F10 /* LocationManager.m */,
+			);
+			name = LocationManager;
+			sourceTree = "<group>";
+		};
+		D32E1CF31C96584A007C7F10 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CEF1C9655D0007C7F10 /* LocationManager */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		D32E1CF41C965861007C7F10 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CF61C965892007C7F10 /* SpeedTrackerPrefix.pch */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		D32E1CFA1C966CC5007C7F10 /* ThirthLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1D0F1C96B434007C7F10 /* MarqueeLabel */,
+				D32E1CFB1C966CF9007C7F10 /* SOMotionDetector */,
+			);
+			name = ThirthLibrary;
+			sourceTree = "<group>";
+		};
+		D32E1CFB1C966CF9007C7F10 /* SOMotionDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1CFC1C966CF9007C7F10 /* SOLocationManager.h */,
+				D32E1CFD1C966CF9007C7F10 /* SOLocationManager.m */,
+				D32E1CFE1C966CF9007C7F10 /* SOMotionDetector.h */,
+				D32E1CFF1C966CF9007C7F10 /* SOMotionDetector.m */,
+				D32E1D001C966CF9007C7F10 /* SOStepDetector.h */,
+				D32E1D011C966CF9007C7F10 /* SOStepDetector.m */,
+			);
+			path = SOMotionDetector;
+			sourceTree = "<group>";
+		};
+		D32E1D0A1C969201007C7F10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1D0D1C9692CE007C7F10 /* bg_speed.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		D32E1D0F1C96B434007C7F10 /* MarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D32E1D101C96B434007C7F10 /* MarqueeLabel.h */,
+				D32E1D111C96B434007C7F10 /* MarqueeLabel.m */,
+			);
+			path = MarqueeLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +333,11 @@
 				TargetAttributes = {
 					D32E1CB11C9651FC007C7F10 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D32E1CCA1C9651FC007C7F10 = {
 						CreatedOnToolsVersion = 7.2;
@@ -243,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32E1D0E1C9692CE007C7F10 /* bg_speed.jpg in Resources */,
 				D32E1CC51C9651FC007C7F10 /* LaunchScreen.storyboard in Resources */,
 				D32E1CC21C9651FC007C7F10 /* Assets.xcassets in Resources */,
 				D32E1CC01C9651FC007C7F10 /* Main.storyboard in Resources */,
@@ -270,9 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32E1CBD1C9651FC007C7F10 /* ViewController.m in Sources */,
+				D32E1D041C966CF9007C7F10 /* SOStepDetector.m in Sources */,
+				D32E1D121C96B434007C7F10 /* MarqueeLabel.m in Sources */,
+				D32E1CF21C965630007C7F10 /* LocationManager.m in Sources */,
+				D32E1CF91C965EE3007C7F10 /* SpeedController.m in Sources */,
 				D32E1CBA1C9651FC007C7F10 /* AppDelegate.m in Sources */,
 				D32E1CB71C9651FC007C7F10 /* main.m in Sources */,
+				D32E1D021C966CF9007C7F10 /* SOLocationManager.m in Sources */,
+				D32E1D031C966CF9007C7F10 /* SOMotionDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +550,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${PROJECT_DIR}/SpeedTracker/Config/SpeedTrackerPrefix.pch";
 				INFOPLIST_FILE = SpeedTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Brian.SpeedTracker;
@@ -424,6 +563,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${PROJECT_DIR}/SpeedTracker/Config/SpeedTrackerPrefix.pch";
 				INFOPLIST_FILE = SpeedTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Brian.SpeedTracker;
@@ -498,6 +639,7 @@
 				D32E1CE11C9651FD007C7F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D32E1CE21C9651FD007C7F10 /* Build configuration list for PBXNativeTarget "SpeedTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +648,7 @@
 				D32E1CE41C9651FD007C7F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D32E1CE51C9651FD007C7F10 /* Build configuration list for PBXNativeTarget "SpeedTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +657,7 @@
 				D32E1CE71C9651FD007C7F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
